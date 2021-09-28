@@ -98,17 +98,12 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
         Log.d("TEST_2_APPS", statusZJ4a7zm.toString())
         when (statusZJ4a7zm) {
             "Organic" -> {
-                if (pS1ZJ4a7zm?.length == 20) {
                     urlForWebViewZJ4a7zm = Uri.parse(firebaseBlackValueZJ4a7zm).buildUpon()
-                        .appendQueryParameter("key", pS1ZJ4a7zm)
+                        .appendQueryParameter("key", firebaseDefaultKeyValueZJ4a7zm)
                         .appendQueryParameter("bundle", packageName)
                         .appendQueryParameter("sub7", "Organic")
                         .toString()
                         .plus("&sub10=${APPSFLYER_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
-                }
-                else {
-                    parseDefaultUrlZJ4a7zm()
-                }
             }
             "Non-organic" -> {
                 if (pS1ZJ4a7zm?.length == 20) {
