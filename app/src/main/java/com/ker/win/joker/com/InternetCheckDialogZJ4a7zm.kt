@@ -8,11 +8,11 @@ import androidx.fragment.app.DialogFragment
 
 class InternetCheckDialogZJ4a7zm : DialogFragment (R.layout.internet_checker_dialog_zj4a7zm) {
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflaterZJ4a7zm: LayoutInflater,
+        containerZJ4a7zm: ViewGroup?,
+        savedInstanceStateZJ4a7zm: Bundle?
     ): View? {
         isCancelable = false
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return super.onCreateView(inflaterZJ4a7zm, containerZJ4a7zm, savedInstanceStateZJ4a7zm)
     }
 }

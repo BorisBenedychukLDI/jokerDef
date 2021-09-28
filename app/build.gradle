@@ -17,7 +17,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField 'String' , 'BINOM_KEY' , '"aHR0cHM6Ly9rZXIud2luLmpva2Vyd2luLmFydC9jbGljay5waHA/a2V5PTZnOTd1NWtoaDVybWkydTEzaWhz"'
         buildConfigField 'String' , 'ONE_SIGNAL_KEY' , '"NWI0YjcwY2MtMmQ1YS00ZGZhLWEwYWMtMjQ1YWU2NmQ2NzU0"'
         buildConfigField 'String' , 'APPS_FLYER_KEY' , '"TkZZczNoTXJuNU54cXBXZGZ6U0R3Sw=="'
 

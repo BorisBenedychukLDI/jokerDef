@@ -46,8 +46,8 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
 
     private lateinit var bindingZJ4a7zm: ActivitySplashZj4a7zmBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onCreate(savedInstanceStateZJ4a7zm: Bundle?) {
+        super.onCreate(savedInstanceStateZJ4a7zm)
         bindingZJ4a7zm = ActivitySplashZj4a7zmBinding.inflate(layoutInflater)
         setContentView(bindingZJ4a7zm.root)
         if (!SharedPreferencesZJ4a7zm.getLastPageZJ4a7zm(this).equals("null")) {
