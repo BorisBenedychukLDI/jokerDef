@@ -2,7 +2,6 @@ package com.ker.win.joker.com
 
 import android.app.Application
 import android.util.Log
-import android.widget.Toast
 import com.appsflyer.AppsFlyerConversionListener
 import com.appsflyer.AppsFlyerLib
 import com.google.android.gms.ads.MobileAds
@@ -12,7 +11,6 @@ import com.onesignal.OneSignal
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class ApplicationZJ4a7zm : Application() {
     override fun onCreate() {
@@ -63,7 +61,7 @@ class ApplicationZJ4a7zm : Application() {
             }
         }
         AppsFlyerLib.getInstance().run {
-            APPSFLYEAR_UIDZJ4a7zm = getAppsFlyerUID(this@ApplicationZJ4a7zm)
+            APPSFLYER_UIDZJ4a7zm = getAppsFlyerUID(this@ApplicationZJ4a7zm)
             init(
                 decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY),
                 applsFlyerConversionZJ4a7zm,
@@ -96,7 +94,7 @@ class ApplicationZJ4a7zm : Application() {
         var mediaSourceZJ4a7zm: String? = null
 
         var GAIDZJ4a7zm: String? = null
-        var APPSFLYEAR_UIDZJ4a7zm: String? = null
+        var APPSFLYER_UIDZJ4a7zm: String? = null
 
         var statusZJ4a7zm: String? = null
 

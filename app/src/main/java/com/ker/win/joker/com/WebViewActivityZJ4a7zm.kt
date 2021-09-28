@@ -139,6 +139,7 @@ class WebViewActivityZJ4a7zm : AppCompatActivity() {
                 loadUrl(SharedPreferencesZJ4a7zm.getLastPageZJ4a7zm(this@WebViewActivityZJ4a7zm)!!)
             } else {
                 loadUrl(intent.getStringExtra("webViewURL") ?: return@run)
+                Log.d("TEST_1_URL", intent.getStringExtra("webViewURL") ?: return@run)
             }
         }
     }

@@ -1,6 +1,5 @@
 package com.ker.win.joker.com
 
-import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -14,7 +13,7 @@ import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.ker.win.joker.com.databinding.ActivitySplashZj4a7zmBinding
 import com.ker.win.joker.com.ApplicationZJ4a7zm.*
-import com.ker.win.joker.com.ApplicationZJ4a7zm.Companion.APPSFLYEAR_UIDZJ4a7zm
+import com.ker.win.joker.com.ApplicationZJ4a7zm.Companion.APPSFLYER_UIDZJ4a7zm
 import com.ker.win.joker.com.ApplicationZJ4a7zm.Companion.GAIDZJ4a7zm
 import com.ker.win.joker.com.ApplicationZJ4a7zm.Companion.adGroupZJ4a7zm
 import com.ker.win.joker.com.ApplicationZJ4a7zm.Companion.adSet2ZJ4a7zm
@@ -68,6 +67,7 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
                     firebaseBlackValueZJ4a7zm = getString(firebaseBlackKeyZJ4a7zm)
                     firebaseDefaultKeyValueZJ4a7zm = getString(firebaseDefaultKeyZJ4a7zm)
                     firebaseWhiteValueZJ4a7zm = getString(firebaseWhiteKeyZJ4a7zm)
+                    Log.d("TEST_FB_URL" , firebaseWhiteValueZJ4a7zm ?: "mistake")
                     SharedPreferencesZJ4a7zm.putFirebaseDefaultKeyZJ4a7zm(
                         firebaseDefaultKeyValueZJ4a7zm!!, this@SplashActivityZJ4a7zm)
                 }
@@ -103,8 +103,8 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
                         .appendQueryParameter("key", pS1ZJ4a7zm)
                         .appendQueryParameter("bundle", packageName)
                         .appendQueryParameter("sub7", "Organic")
-                        .appendQueryParameter("sub10", "${APPSFLYEAR_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
                         .toString()
+                        .plus("&sub10=${APPSFLYER_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
                 }
                 else {
                     parseDefaultUrlZJ4a7zm()
@@ -121,8 +121,8 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
                         .appendQueryParameter("sub5", adSet2ZJ4a7zm)
                         .appendQueryParameter("sub6", afChannelZJ4a7zm)
                         .appendQueryParameter("sub7", mediaSourceZJ4a7zm)
-                        .appendQueryParameter("sub10", "${APPSFLYEAR_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
                         .toString()
+                        .plus("&sub10=${APPSFLYER_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
                     Log.d("TEST_1_URL",urlForWebViewZJ4a7zm.toString())
                 } else {
                     parseDefaultUrlZJ4a7zm()
@@ -144,8 +144,8 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
             .appendQueryParameter("sub5", adSet2ZJ4a7zm)
             .appendQueryParameter("sub6", afChannelZJ4a7zm)
             .appendQueryParameter("sub7","Default")
-            .appendQueryParameter("sub10","${APPSFLYEAR_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
             .toString()
+            .plus("&sub10=${APPSFLYER_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
         Log.d("TEST_1_URL", urlForWebViewZJ4a7zm.toString())
     }
 
