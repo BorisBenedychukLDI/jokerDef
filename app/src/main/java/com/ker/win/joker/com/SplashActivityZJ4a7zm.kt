@@ -111,7 +111,6 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
                 }
             }
             "Non-organic" -> {
-                if (pS1ZJ4a7zm?.length == 20) {
                     urlForWebViewZJ4a7zm = Uri.parse(firebaseBlackValueZJ4a7zm).buildUpon()
                         .appendQueryParameter("key", pS1ZJ4a7zm)
                         .appendQueryParameter("bundle", packageName)
@@ -124,10 +123,6 @@ class SplashActivityZJ4a7zm : AppCompatActivity() {
                         .toString()
                         .plus("&sub10=${APPSFLYER_UIDZJ4a7zm}||${GAIDZJ4a7zm}||${decodeBase64ZJ4a7zm(BuildConfig.APPS_FLYER_KEY)}")
                     Log.d("TEST_1_URL",urlForWebViewZJ4a7zm.toString())
-                } else {
-                    parseDefaultUrlZJ4a7zm()
-                }
-
             }
             else -> {
                 if (pS1ZJ4a7zm?.length == 20) {
