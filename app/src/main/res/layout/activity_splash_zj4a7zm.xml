@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_1"
+    tools:context=".SplashActivityZJ4a7zm">
+
+    <ImageView
+        android:id="@+id/iv_circle_splash_zj4a7zm"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/b_splash_go_zj4a7zm"
+        app:layout_constraintEnd_toEndOf="@+id/b_splash_go_zj4a7zm"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:contentDescription="@string/circle_splashing_zj4a7zm"
+        app:layout_constraintStart_toStartOf="@+id/b_splash_go_zj4a7zm"
+        app:layout_constraintTop_toTopOf="@+id/b_splash_go_zj4a7zm"
+        app:srcCompat="@drawable/splashcircle_zj4a7zm" />
+
+    <Button
+        android:id="@+id/b_splash_go_zj4a7zm"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/theme_2"
+        android:gravity="center"
+        android:text="@string/button_splash_loading_text_zj4a7zm"
+        android:textAllCaps="false"
+        android:textColor="@color/theme_1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_zj4a7zm" />
+
+    <ImageView
+        android:id="@+id/iv_splash_go_zj4a7zm"
+        android:layout_width="332dp"
+        android:layout_height="213dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_zj4a7zm"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/label_picture_zj4a7zm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splashpicture_zj4a7zm" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_zj4a7zm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="370dp" />
+
+    <TextView
+        android:id="@+id/tv_splash_loading_zj4a7zm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_splash_loading_text_zj4a7zm"
+        android:textColor="@color/theme_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_zj4a7zm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_splash_loading_zj4a7zm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/theme_1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_zj4a7zm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

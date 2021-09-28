@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name_zj4a7zm">Joker Win</string>
+    <string name="tv_splash_loading_text_zj4a7zm">Loading…</string>
+    <string name="button_splash_loading_text_zj4a7zm">Start</string>
+    <string name="internet_dialog_check_text_zj4a7zm">No Internet Connection</string>
+    <string name="circle_splashing_zj4a7zm">circle splashing</string>
+    <string name="label_picture_zj4a7zm">label picture</string>
+</resources>
